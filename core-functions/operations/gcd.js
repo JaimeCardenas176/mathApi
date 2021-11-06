@@ -8,4 +8,4 @@ const greatestCommonDivisor = (numA, numB) => {
     return greatestCommonDivisor(low, rest);
 }; 
 
-module.exports = { gcd };
+module.exports = { greatestCommonDivisor };

@@ -1,9 +1,9 @@
 const express = require('express');
-const path = require('path');
 const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
-const arrays = require('./routes/arrays');
 
+const arrays = require('./routes/arrays');
+const fibonacci = require('./routes/fibonacci');
+const operations = require('./routes/operations');
 const PREFIX = '/mathApi/v1/';
 
 const app = express();
