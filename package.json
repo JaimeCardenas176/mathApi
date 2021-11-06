@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "nodemon ./bin/www",
-    "start": "node ./bin/www",
-    "test": "mocha --exit",
+    "dev": "set NODE_ENV=development && set DEBUG=app:* && nodemon ./bin/www",
+    "start": "set NODE_ENV=production && node ./bin/www",
+    "test": "set NODE_ENV=development && mocha --exit",
     "cover": "nyc npm run test",
     "report": "nyc report --reporter=html && start coverage/app.html"
   },
