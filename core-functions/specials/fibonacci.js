@@ -4,12 +4,10 @@ const fibonacciS = (n) => {
     let f1 = 1;
     let fn;
     
-    if( n === 0 )
-        return f0;
-    if( n <= 2)
-        return f1;
+    if( n < 2)
+        return n;
 
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i < n-1; i++) {
         fn = f0 +f1;
         f0 = f1;
         f1 = fn;       
@@ -24,7 +22,7 @@ const fibonacciR = (n) => {
     if( n < 2)
         return n;  
     //caso recursivo
-    return (fibonacci(n-1) + fibonacci(n-2));
+    return (fibonacciR(n-1) + fibonacciR(n-2));
 };
 
 

@@ -40,7 +40,7 @@ const fibonacciR = (req, res) => {
     });
 };
 
-
+let recuerdaNumero  = [];
 //PROGRAMACION DINAMICA
 /**
  * @param {* número del cual se calculara la funcion de Fibonacci
@@ -50,7 +50,6 @@ const fibonacciR = (req, res) => {
  */
 const fibonacciDP = (req, res) => {
     const number = req.params.number;
-    let recuerdaNumero  = []; 
     const result = fibonacci.fibonacciDP(number, recuerdaNumero);
 
     if (result && !isNaN(result))
