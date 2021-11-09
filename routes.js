@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const mathAPIRoutes = require('./mathAPI.routes');
+const routes = require('./routes/mathAPI.routes');
 
 // Petición base.
 router.get('/', (req, res, next) => {
@@ -9,6 +9,6 @@ router.get('/', (req, res, next) => {
 });
 
 // Routing
-router.use('/mathApi/v1', mathAPIRoutes);
+router.use('/mathApi/v1', routes);
 
 module.exports = router;
