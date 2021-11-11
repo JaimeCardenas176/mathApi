@@ -40,7 +40,6 @@ const fibonacciR = (req, res) => {
     });
 };
 
-let recuerdaNumero  = [];
 //PROGRAMACION DINAMICA
 /**
  * @param {* número del cual se calculara la funcion de Fibonacci
@@ -48,6 +47,8 @@ let recuerdaNumero  = [];
  *  Tiene que ser un número natural (Entero positivo) } n 
  * @returns devuelve la funcion de Fibonacci (Fib(n))
  */
+let recuerdaNumero  = [];
+
 const fibonacciDP = (req, res) => {
     const number = req.params.number;
     const result = fibonacci.fibonacciDP(number, recuerdaNumero);

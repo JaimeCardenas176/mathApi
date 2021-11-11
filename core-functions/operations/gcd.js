@@ -3,7 +3,7 @@ const greatestCommonDivisor = (numA, numB) => {
     const low = Math.min(numA, numB);
     const rest = high % low;
     
-    if ( rest === 0)
+    if (rest === 0)
         return low;
     
     return greatestCommonDivisor(low, rest);

@@ -7,7 +7,7 @@ const operationsRouter = require("./operations.routes");
 
 // Petición base.
 router.get('/', (req, res, next) => {
-   return res.send('Hello World!');
+   return res.send('Hello Maths!');
 });
 
 // Routing
